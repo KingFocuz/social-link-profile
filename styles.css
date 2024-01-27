@@ -1,0 +1,126 @@
+:root{
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 20%);
+    --darkgrey-color: hsl(0, 0%, 12%);
+    --offblack-color: hsl(0, 0%, 8%);
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: Inter, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--offblack-color);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkgrey-color);
+    margin: auto;
+    width: 350px;
+    height: 550px;
+    border-radius: 10px;
+}
+img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+h1{
+    color: var(--white-color);
+    font-weight:600;
+    font-size: 24px;
+}
+#location{
+    color: var(--green-color);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.desc{
+    font-size: 14px;
+    color: var(--white-color);
+}
+ul{
+    color: var(--white-color);
+    list-style-type: none;
+    width: 100%;
+    margin: auto;
+}
+ul li{
+    background-color: var(--grey-color);
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    margin-left: -5px;
+    margin-bottom: 14px;
+    padding-top: 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+li:hover{
+    background-color: var(--green-color);
+    color: var(--offblack-color);
+    cursor: pointer;
+}
+ul li:nth-child(5){
+    margin-bottom: -5px;
+}
+.attribution{
+    font-size: 12px;
+    color: var(--white-color);
+    padding: 10px;
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--green-color);
+}
+@media screen and (max-width: 375px){
+    main{
+        margin: auto;
+        width: 280px;
+        height: 480px;
+    }
+    img{
+        width: 75px;
+        height: 75px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #location{
+        font-size: 12px;
+        margin-bottom: 5-px;
+    }
+    .desc{
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    ul li{
+        padding-top: 10px;
+        font-size: 12px;
+        height: 35px;
+        margin-left: -18px;
+        width: 98%;
+    }
+    .attribution{
+        font-size: 8px;
+        padding: 8px;
+    }
+}
